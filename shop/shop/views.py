@@ -1,9 +1,16 @@
 from django.shortcuts import render
-
+import json
 
 def index(request):
-    return render(request, 'shop/index.html')
+    title = 'geekshop'
+    list_params = ['a1', 'a2', 'a3']
 
+    context = {
+        'list_params': list_params,
+        'some_name': 'hello',
+        'title': title,
+    }
+    return render(request, 'index.html', context=context)
 
-def contact(request):
-    return render(request, 'shop/contact.html')
+def contacts(request):
+    return render(request, 'contact.html')
