@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a13413d-ba37-43e6-9679-815aed5145b9" name="Default Changelist" comment="" />
+    <list default="true" id="4a13413d-ba37-43e6-9679-815aed5145b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/controll.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/controll1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/controll2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/icon-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/product-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/product-21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/mainapp/static/mainapp/img/product-31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/geekshop/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/geekshop/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/geekshop/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/geekshop/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/geekshop/templates/includes/inc_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/geekshop/templates/includes/inc_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/geekshop/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/geekshop/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/templates/mainapp/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/templates/mainapp/products.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +40,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop/mainapp/static/mainapp/img" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PyProjects\myshop\shop\mainapp\static\mainapp\img" />
       <recent name="C:\PyProjects\myshop\shop" />
       <recent name="C:\PyProjects\shop\shop" />
       <recent name="C:\PyProjects\shop\mainapp" />
