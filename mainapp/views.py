@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def products(request):
+def products(request, pk=None):
     title = 'каталог/продукты'
 
     links_menu = [
