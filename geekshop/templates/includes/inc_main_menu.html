@@ -5,5 +5,18 @@
         <li><a href="{% url 'mainapp:index' %}">продукты</a></li>
         <li><a href="{% url 'contacts' %}">контакты</a></li>
     </ul>
-    <a href="#" class="search"></a>
+    {% if user.is_authenticated %}
+    <li>
+        <a href="{% url 'auth:edit' %}" class="status">
+            {{ user.first_name|default:'Пользователь' }}
+        </a>
+    </li>
+    {% endif %}
+    <li class="user">
+        {% if user.is_authenticated %}
+        <a href="{% url 'auth:logout' %}" class="status">выйти</a>
+        {% else %}
+        <a href="{% url 'auth:login' %}" class="status">войти</a>
+        {% endif %}
+    </li>
 </div>

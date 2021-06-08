@@ -71,6 +71,25 @@ html, body {
 	border-bottom: 3px solid #212121;
 }
 
+.user {
+    list-style-type: none;
+    float: right;
+    padding-right: 220px;
+    padding-top: 25px;
+}
+
+.status {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 22px;
+    line-height: 13px;
+    letter-spacing: 1px;
+}
+
 .search {
 	display: block;
 	width: 23px;
