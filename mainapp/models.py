@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class ProductCategory(models.Model):
     name = models.CharField(verbose_name='имя', max_length=64, unique=True)
     description = models.TextField(
@@ -23,6 +23,7 @@ class ProductCategory(models.Model):
         verbose_name = 'категория',
         verbose_name_plural = 'категории'
 
+
 class Product(models.Model):
     category = models.ForeignKey(
         ProductCategory,
@@ -35,7 +36,7 @@ class Product(models.Model):
         max_length=128,
     )
     image = models.ImageField(
-        upload_to='media',
+        upload_to='products_images',
         blank=True,
         verbose_name='фото товара',
     )

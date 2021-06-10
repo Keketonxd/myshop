@@ -27,9 +27,7 @@ class Command(BaseCommand):
             category_pk = product['category']
 
             _category = ProductCategory.objects.get(pk=category_pk)
-
             product['category'] = _category
             new_product = Product(**product)
             new_product.save()
-
-        ShopUser.objects.create_superuser('admin', 'admin@geekshop.local', '123', age='24')
+            ShopUser.objects.create_superuser('admin', 'admin@geekshop.local', '123', age='24')

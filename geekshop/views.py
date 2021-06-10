@@ -1,14 +1,24 @@
 from django.shortcuts import render
-from mainapp.models import ProductCategory, Product
-import json
+
+from basketapp.models import Basket
+from mainapp.models import Product
 
 
 def index(request):
-    title = 'Главная'
+    basket = []
+    if request.user.is_authenticated:
+        basket = Basket.objects.filter(user=request.user)
+
+    title = 'geekshop'
     products = Product.objects.all()[:4]
 
-    content = {'title': title, 'products': products}
-    return render(request, 'index.html', content)
+    context = {
+        'products': products,
+        'some_name': 'hello',
+        'title': title,
+        'basket': basket,
+    }
+    return render(request, 'index.html', context=context)
 
 
 def contacts(request):
