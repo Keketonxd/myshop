@@ -12,7 +12,12 @@
         <div class="header clearfix">
             {% include 'includes/inc_main_menu.html' %}
             <a href="#" class="search"></a>
-            <a href="#" class="basket"></a>
+                    <a href="{% url 'basket:view' %}" class="fa fa-shopping-basket basket">
+            <span>
+                {{ basket.0.total_cost|floatformat:0 }} руб
+                {{ basket.0.total_quantity }} шт.
+            </span>
+        </a>
         </div>
         <h1>наши контакты</h1>
     </div>

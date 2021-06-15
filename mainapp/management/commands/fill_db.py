@@ -9,7 +9,7 @@ JSON_PATH = 'mainapp/json'
 
 
 def load_from_json(file_name):
-    with open(os.path.join(JSON_PATH, file_name + '.json'), mode='r', encoding='utf-8') as infile:
+    with open(os.path.join(JSON_PATH, file_name + '.json'), 'r') as infile:
         return json.load(infile)
 
 
@@ -27,7 +27,9 @@ class Command(BaseCommand):
             category_pk = product['category']
 
             _category = ProductCategory.objects.get(pk=category_pk)
+
             product['category'] = _category
             new_product = Product(**product)
             new_product.save()
-            ShopUser.objects.create_superuser('admin', 'admin@geekshop.local', '123', age='24')
+
+        ShopUser.objects.create_superuser('admin', 'admin@geekshop.local', '123', age='24')
