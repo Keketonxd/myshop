@@ -59,7 +59,7 @@ html, body {
 	font-weight: 700;
 	border-bottom: 3px solid #212121;
 }
-.menu a:hover, basket a:hover {
+.menu a:hover {
 	color: #212121;
 	font-weight: 700;
 	border-bottom: 3px solid #212121;
@@ -71,23 +71,22 @@ html, body {
 }
 
 .search {
-	display: block;
+	display: inline-block;
 	width: 23px;
 	height: 23px;	
 	background-image: url(img/search.png);
     margin-top: 67px;
-    float: right;
 }
 .basket {
 	display: block;
-	width: 50px;
-	height: 50px;
-	text-decoration: none;
+	height: 23px;
+	background-image: url(img/basket.png);
     margin-top: 67px;
     float: right;
 	margin-left: 20px;
     padding-top: 3px;
 	color: #8c8c8c;
+	margin-right: 10px;
 }
 
 .clearfix:after {
@@ -896,35 +895,7 @@ td:first-child {
 	height: 651px; 
 }
 
-.slider-product {
-	width: 570px;
-	height: 570px;
-}
-.slider-control {
-	width: 420px;
-	height: 70px;
-	margin: 11px auto 0px;
-	padding-left: 150px
-}
-.slider-control .block {
-	height: 70px;
-	width: 70px;
-	position: relative;
-	float: left;
-	margin-right: 10px;
-}
-.slider-control a .text {
-	display: none;
-	height: 70px;
-	width: 70px;
-	background-color: #fff;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;    
-}
-.slider-control a:hover .text {
-	display: block;
-}
+
 
 .description {
 	width: 535px;
