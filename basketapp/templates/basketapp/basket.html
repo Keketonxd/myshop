@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'geekshop/base.html' %}
 {% load static %}
 
 {% block css %}
@@ -13,7 +13,7 @@
 
 {% block content %}
 <div class="" style="padding-left: 98px; padding-right: 211px; position: relative;">
-	{% include 'includes/inc_main_menu.html' %}
+	{% include 'geekshop/includes/inc_main_menu.html' %}
     {% if user.is_authenticated %}
         <div class="container">
             <div class="basket_list">

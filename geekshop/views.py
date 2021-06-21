@@ -18,8 +18,8 @@ def index(request):
         'title': title,
         'basket': basket,
     }
-    return render(request, 'index.html', context=context)
+    return render(request, 'geekshop/index.html', context=context)
 
 
 def contacts(request):
-    return render(request, 'contact.html')
+    return render(request, 'geekshop/contact.html')
